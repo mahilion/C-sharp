@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] iarr = new string[5];
+            Console.WriteLine("enter five names");
+            for(int i=0;i<iarr.Length;i++)
+            {
+
+                iarr[i] = Console.ReadLine();
+               
+            }
+            Console.WriteLine("elements are ");
+            foreach (string i in iarr)
+            {
+                Console.WriteLine(i);
+            }
+            Array.Sort(iarr);
+            Console.WriteLine("elements in ascending order are ");
+            foreach (string i in iarr)
+            {
+                Console.WriteLine(i);
+            }
+            Array.Reverse(iarr);
+            Console.WriteLine("elements in descending order are ");
+            foreach (string i in iarr)
+            {
+                Console.WriteLine(i);
+            }
+
+        }
+
+    }
+}

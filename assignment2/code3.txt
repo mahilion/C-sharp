@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           mobile nokia=new mobile("nokia lumia",12000);
+            nokia.showspecs();
+
+        }
+
+    }
+    class mobile
+    {
+        string name;
+            int price;
+        public mobile(string name,int price)
+        {
+            this.name = name;
+            this.price = price;
+        }
+        public void showspecs()
+        {
+            Console.WriteLine("the name of mobile is " + name);
+            Console.WriteLine("the price of mobile is " + price.ToString());
+
+
+        }
+    }
+}

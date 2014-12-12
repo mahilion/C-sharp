@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            shape obj = new shape();
+            obj.area(15);
+            obj.area(10,20);
+
+
+        }
+
+    }
+    class shape
+    {
+        public void area(int a)
+        {
+            Console.WriteLine("area of  square is " + (a * a).ToString());
+        }
+        public void area(int l,int b)
+        {
+            Console.WriteLine("area of  rectangle is " + (l * b).ToString());
+        }
+
+    }
+   
+    
+}

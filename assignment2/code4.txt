@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           mobile nokia=new mobile("nokia lumia",12000,true);
+            nokia.showspecs();
+            nokia.isdualsimsupported();
+
+        }
+
+    }
+    class mobile
+    {
+        string name;
+            int price;
+            bool sim;
+        public mobile(string name,int price)
+        {
+            this.name = name;
+            this.price = price;
+        }
+        public mobile(string name,int price,bool b)
+        {
+            this.name = name;
+            this.price = price;
+            this.sim = b;
+        }
+        public void showspecs()
+        {
+            Console.WriteLine("the name of mobile is " + name);
+            Console.WriteLine("the price of mobile is " + price.ToString());
+
+
+        }
+        public void isdualsimsupported()
+        {
+            Console.WriteLine(this.sim);
+        }
+    }
+}
