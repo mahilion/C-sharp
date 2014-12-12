@@ -1,3 +1,4 @@
+//this is a basic example on using out parameter in C-sharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
