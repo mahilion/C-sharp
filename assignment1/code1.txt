@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b, sum,avg;
+            a = 10;
+            b = 20;
+            //calculate(a,b,out sum,out avg);
+            Program ob = new Program();
+            ob.calculate(a, b, out sum, out avg);
+            Console.WriteLine("sum is" + sum + "avg is" + avg);
+            
+            
+        }
+        void calculate(int a,int b,out int sum ,out int avg)
+        {
+            sum = a + b;
+            avg = sum / 2;
+        }
+       
+
+    }
+}

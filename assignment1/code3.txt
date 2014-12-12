@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            float num1, num2;
+
+            char a;
+            Console.WriteLine("enter two numbers");
+            num1 = float.Parse(Console.ReadLine());
+            num2 = float.Parse(Console.ReadLine());
+            Console.WriteLine("press \"+\" for addition\n \"-\" for subtraction \n \"/\" for division\n \"*\" for multiplication ");
+            a = (char)Console.Read();
+            switch(a)
+            {
+                case '+': Console.WriteLine("sum is " + (num1 + num2).ToString()); 
+                    break;
+                case '-': Console.WriteLine("difference is " + (num1 - num2).ToString());
+                    break;
+                case '*': Console.WriteLine("product is " + (num1 * num2).ToString());
+                    break;
+                case '/': Console.WriteLine("quotient is " + (num1 / num2).ToString());
+                    break;
+                default: Console.WriteLine("invalid entry ");
+                    break;
+            }
+            
+
+
+
+            
+
+        }
+       
+
+    }
+}
